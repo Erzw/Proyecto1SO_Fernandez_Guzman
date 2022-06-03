@@ -1,0 +1,1267 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="fabricas" alignment="1" max="32767" attributes="0"/>
+                  <Component id="btn_simulacion" alignment="0" max="32767" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
+              <Component id="fabricas" min="-2" pref="715" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Component id="btn_simulacion" min="-2" max="-2" attributes="0"/>
+              <EmptySpace pref="52" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JButton" name="btn_simulacion">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Empezar Simulaci&#xf3;n"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_simulacionActionPerformed"/>
+      </Events>
+    </Component>
+    <Container class="javax.swing.JTabbedPane" name="fabricas">
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout"/>
+      <SubComponents>
+        <Container class="javax.swing.JPanel" name="panel_fabrica1">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="Fabrica 1">
+                <Property name="tabTitle" type="java.lang.String" value="Fabrica 1"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="plots" max="32767" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="103" alignment="0" groupAlignment="0" attributes="0">
+                                      <Component id="lb_prod_botones" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="lb_titulo_prod_botones" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="mas_boton" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="menos_boton" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Component id="lb_prod_cam" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="lb_titulo_prod_cam" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="mas_cam" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="menos_cam" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="1" attributes="0">
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="lb_botones" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              <Component id="lb_titulo_botones" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="lb_pantallas" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              <Component id="lb_titulo_pantallas" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              <Component id="lb_ingreso" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              <Component id="lb_titulo_ingreso" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                  </Group>
+                                  <Component id="lb_costo" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lb_titulo_costo" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="lb_deployed" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="lb_titulo_deployed" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="lb_profit" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="lb_titulo_profit" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="lb_dia" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="lb_titulo_dia" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="lb_prod_pin" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="lb_titulo_prod_pin" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="mas_pin" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="menos_pin" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="mas_pant" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="menos_pant" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                  <Component id="lb_camaras" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="lb_titulo_camaras" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              </Group>
+                                              <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
+                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                  <Component id="lb_pines" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="lb_titulo_pines" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                          <Component id="lb_titulo_prod_pant" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="lb_prod_pant" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                  <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                                                      <Component id="lb_gerente" alignment="0" max="32767" attributes="0"/>
+                                                      <Component id="lb_titulo_gerente" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                  </Group>
+                                                  <Component id="lb_ens" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="lb_titulo_ens" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="lb_celulares" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="lb_titulo_celulares" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                  <Group type="102" alignment="0" attributes="0">
+                                                      <Component id="mas_ens" min="-2" max="-2" attributes="0"/>
+                                                      <EmptySpace max="-2" attributes="0"/>
+                                                      <Component id="menos_ens" min="-2" max="-2" attributes="0"/>
+                                                  </Group>
+                                              </Group>
+                                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="lb_titulo_jefe" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                                              <Component id="lb_jefe_pago" max="32767" attributes="0"/>
+                                          </Group>
+                                          <Component id="lb_jefe_estado" max="32767" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                              </Group>
+                          </Group>
+                          <Component id="btn_archivo" alignment="0" max="32767" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="lb_titulo_prod_botones" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
+                              <Component id="lb_prod_botones" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="3" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="mas_boton" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="menos_boton" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="lb_titulo_prod_pin" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
+                              <Component id="lb_prod_pin" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="3" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="mas_pin" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="menos_pin" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="lb_titulo_ens" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
+                              <Component id="lb_ens" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="3" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="mas_ens" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="menos_ens" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="lb_titulo_prod_cam" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="lb_prod_cam" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lb_prod_pant" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="3" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="mas_cam" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="menos_cam" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="mas_pant" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="menos_pant" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="lb_titulo_prod_pant" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lb_jefe_pago" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lb_titulo_jefe" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="lb_jefe_estado" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="lb_titulo_gerente" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="lb_gerente" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace min="-2" pref="56" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="lb_titulo_botones" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="lb_botones" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="lb_titulo_camaras" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="lb_camaras" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="lb_titulo_pines" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="lb_pines" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="lb_titulo_pantallas" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="lb_pantallas" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="lb_titulo_celulares" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="lb_celulares" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="lb_titulo_costo" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="lb_costo" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="lb_titulo_ingreso" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="lb_ingreso" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="lb_titulo_deployed" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="lb_deployed" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="lb_titulo_profit" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="lb_profit" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="lb_titulo_dia" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="lb_dia" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
+                      <Component id="btn_archivo" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="plots" min="-2" pref="299" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Container class="javax.swing.JTabbedPane" name="plots">
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout"/>
+              <SubComponents>
+                <Container class="javax.swing.JPanel" name="plt_costo">
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+                      <JTabbedPaneConstraints tabName="Costo">
+                        <Property name="tabTitle" type="java.lang.String" value="Costo"/>
+                      </JTabbedPaneConstraints>
+                    </Constraint>
+                  </Constraints>
+
+                  <Layout>
+                    <DimensionLayout dim="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <EmptySpace min="0" pref="553" max="32767" attributes="0"/>
+                      </Group>
+                    </DimensionLayout>
+                    <DimensionLayout dim="1">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <EmptySpace min="0" pref="271" max="32767" attributes="0"/>
+                      </Group>
+                    </DimensionLayout>
+                  </Layout>
+                </Container>
+                <Container class="javax.swing.JPanel" name="plt_ingreso">
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+                      <JTabbedPaneConstraints tabName="Ingreso">
+                        <Property name="tabTitle" type="java.lang.String" value="Ingreso"/>
+                      </JTabbedPaneConstraints>
+                    </Constraint>
+                  </Constraints>
+
+                  <Layout>
+                    <DimensionLayout dim="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <EmptySpace min="0" pref="553" max="32767" attributes="0"/>
+                      </Group>
+                    </DimensionLayout>
+                    <DimensionLayout dim="1">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <EmptySpace min="0" pref="271" max="32767" attributes="0"/>
+                      </Group>
+                    </DimensionLayout>
+                  </Layout>
+                </Container>
+                <Container class="javax.swing.JPanel" name="plt_ganancia">
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+                      <JTabbedPaneConstraints tabName="Ganancia">
+                        <Property name="tabTitle" type="java.lang.String" value="Ganancia"/>
+                      </JTabbedPaneConstraints>
+                    </Constraint>
+                  </Constraints>
+
+                  <Layout>
+                    <DimensionLayout dim="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <EmptySpace min="0" pref="553" max="32767" attributes="0"/>
+                      </Group>
+                    </DimensionLayout>
+                    <DimensionLayout dim="1">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <EmptySpace min="0" pref="271" max="32767" attributes="0"/>
+                      </Group>
+                    </DimensionLayout>
+                  </Layout>
+                </Container>
+              </SubComponents>
+            </Container>
+            <Component class="javax.swing.JLabel" name="lb_gerente">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="_"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="menos_pant">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="-"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="menos_pantActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="menos_cam">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="-"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="menos_camActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lb_jefe_estado">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="_"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lb_titulo_profit">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Ganancias:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lb_prod_cam">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="_"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="menos_pin">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="-"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="menos_pinActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lb_titulo_gerente">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Estado del Gerente:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lb_titulo_dia">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Dias para Lanzamiento:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lb_titulo_botones">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Botones:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lb_prod_pant">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="_"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lb_jefe_pago">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="_"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lb_pantallas">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="_"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lb_ingreso">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="_"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lb_costo">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="_"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lb_prod_pin">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="_"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="mas_ens">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="+"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="mas_ensActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="mas_boton">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="+"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="mas_botonActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lb_titulo_prod_botones">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Productores de Botones:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lb_titulo_prod_pin">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Productores de Pines de Carga:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lb_prod_botones">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="_"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="menos_ens">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="-"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="menos_ensActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lb_titulo_prod_pant">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Productores de Pantallas:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="menos_boton">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="-"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="menos_botonActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lb_deployed">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="_"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lb_titulo_costo">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Costo:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lb_titulo_camaras">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Camaras:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="mas_cam">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="+"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="mas_camActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lb_botones">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="_"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lb_dia">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="_"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lb_titulo_pantallas">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Pantallas:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lb_titulo_prod_cam">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Productores de C&#xe1;maras:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lb_pines">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="_"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lb_titulo_ingreso">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Ingreso Bruto:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lb_celulares">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="_"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lb_profit">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="_"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lb_titulo_deployed">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Celulares Lanzados:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lb_titulo_celulares">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Celulares:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lb_ens">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="_"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="mas_pant">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="+"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="mas_pantActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lb_camaras">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="_"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lb_titulo_ens">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Ensambladores:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="mas_pin">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="+"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="mas_pinActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lb_titulo_pines">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Pines de Carga:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lb_titulo_jefe">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Jefe:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="btn_archivo">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Abrir Archivo CSV"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_archivoActionPerformed"/>
+              </Events>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="panel_fabrica2">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="Fabrica 2">
+                <Property name="tabTitle" type="java.lang.String" value="Fabrica 2"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="103" alignment="0" groupAlignment="0" attributes="0">
+                                      <Component id="lb_prod_botones1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="lb_titulo_prod_botones1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="mas_boton1" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="menos_boton1" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Component id="lb_prod_cam1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="lb_titulo_prod_cam1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="mas_cam1" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="menos_cam1" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="1" attributes="0">
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="lb_botones1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              <Component id="lb_titulo_botones1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="lb_pantallas1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              <Component id="lb_titulo_pantallas1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              <Component id="lb_ingreso1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              <Component id="lb_titulo_ingreso1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                  </Group>
+                                  <Component id="lb_costo1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lb_titulo_costo1" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="lb_deployed1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="lb_titulo_deployed1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="lb_profit1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="lb_titulo_profit1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="lb_dia1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="lb_titulo_dia1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="lb_prod_pin1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="lb_titulo_prod_pin1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="mas_pin1" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="menos_pin1" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="mas_pant1" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="menos_pant1" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                  <Component id="lb_camaras1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="lb_titulo_camaras1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              </Group>
+                                              <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
+                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                  <Component id="lb_pines1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="lb_titulo_pines1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                          <Component id="lb_titulo_prod_pant1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="lb_prod_pant1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                  <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                                                      <Component id="lb_gerente1" alignment="0" max="32767" attributes="0"/>
+                                                      <Component id="lb_titulo_gerente1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                  </Group>
+                                                  <Component id="lb_ens1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="lb_titulo_ens1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="lb_celulares1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="lb_titulo_celulares1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                  <Group type="102" alignment="0" attributes="0">
+                                                      <Component id="mas_ens1" min="-2" max="-2" attributes="0"/>
+                                                      <EmptySpace max="-2" attributes="0"/>
+                                                      <Component id="menos_ens1" min="-2" max="-2" attributes="0"/>
+                                                  </Group>
+                                              </Group>
+                                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="lb_titulo_jefe1" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                                              <Component id="lb_jefe_pago1" max="32767" attributes="0"/>
+                                          </Group>
+                                          <Component id="lb_jefe_estado1" alignment="0" max="32767" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                              </Group>
+                          </Group>
+                          <Component id="btn_archivo1" alignment="0" max="32767" attributes="0"/>
+                          <Component id="plots1" alignment="0" max="32767" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="lb_titulo_prod_botones1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
+                              <Component id="lb_prod_botones1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="3" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="mas_boton1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="menos_boton1" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="lb_titulo_prod_pin1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
+                              <Component id="lb_prod_pin1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="3" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="mas_pin1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="menos_pin1" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="lb_titulo_ens1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
+                              <Component id="lb_ens1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="3" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="mas_ens1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="menos_ens1" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="lb_titulo_prod_cam1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="lb_prod_cam1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lb_prod_pant1" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="3" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="mas_cam1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="menos_cam1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="mas_pant1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="menos_pant1" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="lb_titulo_prod_pant1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lb_jefe_pago1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lb_titulo_jefe1" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="lb_jefe_estado1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="lb_titulo_gerente1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="lb_gerente1" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace min="-2" pref="56" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="lb_titulo_botones1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="lb_botones1" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="lb_titulo_camaras1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="lb_camaras1" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="lb_titulo_pines1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="lb_pines1" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="lb_titulo_pantallas1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="lb_pantallas1" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="lb_titulo_celulares1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="lb_celulares1" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="lb_titulo_costo1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="lb_costo1" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="lb_titulo_ingreso1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="lb_ingreso1" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="lb_titulo_deployed1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="lb_deployed1" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="lb_titulo_profit1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="lb_profit1" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="lb_titulo_dia1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="lb_dia1" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace pref="41" max="32767" attributes="0"/>
+                      <Component id="btn_archivo1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="plots1" min="-2" pref="300" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="lb_gerente1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="_"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="menos_pant1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="-"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="menos_pant1ActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="menos_cam1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="-"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="menos_cam1ActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lb_jefe_estado1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="_"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lb_titulo_profit1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Ganancias:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lb_prod_cam1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="_"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="menos_pin1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="-"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="menos_pin1ActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lb_titulo_gerente1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Estado del Gerente:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lb_titulo_dia1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Dias para Lanzamiento:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lb_titulo_botones1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Botones:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lb_prod_pant1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="_"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lb_jefe_pago1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="_"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lb_pantallas1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="_"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lb_ingreso1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="_"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lb_costo1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="_"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lb_prod_pin1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="_"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="mas_ens1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="+"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="mas_ens1ActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="mas_boton1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="+"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="mas_boton1ActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lb_titulo_prod_botones1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Productores de Botones:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lb_titulo_prod_pin1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Productores de Pines de Carga:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lb_prod_botones1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="_"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="menos_ens1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="-"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="menos_ens1ActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lb_titulo_prod_pant1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Productores de Pantallas:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="menos_boton1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="-"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="menos_boton1ActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lb_deployed1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="_"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lb_titulo_costo1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Costo:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lb_titulo_camaras1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Camaras:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="mas_cam1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="+"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="mas_cam1ActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lb_botones1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="_"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lb_dia1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="_"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lb_titulo_pantallas1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Pantallas:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lb_titulo_prod_cam1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Productores de C&#xe1;maras:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lb_pines1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="_"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lb_titulo_ingreso1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Ingreso Bruto:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lb_celulares1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="_"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lb_profit1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="_"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lb_titulo_deployed1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Celulares Lanzados:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lb_titulo_celulares1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Celulares:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lb_ens1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="_"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="mas_pant1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="+"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="mas_pant1ActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lb_camaras1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="_"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lb_titulo_ens1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Ensambladores:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="mas_pin1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="+"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="mas_pin1ActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lb_titulo_pines1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Pines de Carga:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lb_titulo_jefe1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Jefe:"/>
+              </Properties>
+            </Component>
+            <Container class="javax.swing.JTabbedPane" name="plots1">
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout"/>
+              <SubComponents>
+                <Container class="javax.swing.JPanel" name="plt_ingreso1">
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+                      <JTabbedPaneConstraints tabName="Ingreso">
+                        <Property name="tabTitle" type="java.lang.String" value="Ingreso"/>
+                      </JTabbedPaneConstraints>
+                    </Constraint>
+                  </Constraints>
+
+                  <Layout>
+                    <DimensionLayout dim="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <EmptySpace min="0" pref="553" max="32767" attributes="0"/>
+                      </Group>
+                    </DimensionLayout>
+                    <DimensionLayout dim="1">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <EmptySpace min="0" pref="272" max="32767" attributes="0"/>
+                      </Group>
+                    </DimensionLayout>
+                  </Layout>
+                </Container>
+                <Container class="javax.swing.JPanel" name="plt_ganancia1">
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+                      <JTabbedPaneConstraints tabName="Ganancia">
+                        <Property name="tabTitle" type="java.lang.String" value="Ganancia"/>
+                      </JTabbedPaneConstraints>
+                    </Constraint>
+                  </Constraints>
+
+                  <Layout>
+                    <DimensionLayout dim="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <EmptySpace min="0" pref="553" max="32767" attributes="0"/>
+                      </Group>
+                    </DimensionLayout>
+                    <DimensionLayout dim="1">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <EmptySpace min="0" pref="272" max="32767" attributes="0"/>
+                      </Group>
+                    </DimensionLayout>
+                  </Layout>
+                </Container>
+                <Container class="javax.swing.JPanel" name="plt_costo1">
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+                      <JTabbedPaneConstraints tabName="Costo">
+                        <Property name="tabTitle" type="java.lang.String" value="Costo"/>
+                      </JTabbedPaneConstraints>
+                    </Constraint>
+                  </Constraints>
+
+                  <Layout>
+                    <DimensionLayout dim="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <EmptySpace min="0" pref="553" max="32767" attributes="0"/>
+                      </Group>
+                    </DimensionLayout>
+                    <DimensionLayout dim="1">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <EmptySpace min="0" pref="272" max="32767" attributes="0"/>
+                      </Group>
+                    </DimensionLayout>
+                  </Layout>
+                </Container>
+              </SubComponents>
+            </Container>
+            <Component class="javax.swing.JButton" name="btn_archivo1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Abrir Archivo CSV"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_archivo1ActionPerformed"/>
+              </Events>
+            </Component>
+          </SubComponents>
+        </Container>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>

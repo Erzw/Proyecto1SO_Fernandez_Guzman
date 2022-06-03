@@ -170,5 +170,166 @@ public class Fabrica extends Thread{
         
         gui.set_ensambladores( ensambladores.size() , n_fabrica);
         
-    }}
+    }
+    
+ public void addProductor(int tipo_producto){
+        productores.get(tipo_producto).add( new Productor(tipo_producto, this) );
+        productores.get(tipo_producto).get( productores.get(tipo_producto).size()-1 ).start();
+    }
+    
+    public void removeProductor(int tipo_producto){
+        productores.get(tipo_producto).get( productores.get(tipo_producto).size()-1 ).interrupt();
+        productores.get(tipo_producto).remove( productores.get(tipo_producto).size()-1 );
+    }
+    
+    public void addEnsamblador(){
+        ensambladores.add(new Ensamblador(this));
+        ensambladores.get( ensambladores.size()-1 ).start();
+    }
+    
+    public void removeEnsamblador(){
+        ensambladores.get( ensambladores.size()-1 ).interrupt();
+        ensambladores.remove( ensambladores.size()-1 );
+    }
+
+    public int getCantidadProductor( int tipo_producto ){
+        return productores.get( tipo_producto ).size();
+    }
+
+    public int getCantidadEnsambladores(){
+        return ensambladores.size();
+    }
+
+    public int getTiempoProduccion(int tipo_producto){
+        return tiempo_produccion[tipo_producto];
+    }
+
+    public void almacenar(int tipo_producto){
+
+        try {
+        
+            sem_capacidad[tipo_producto].acquire();
+            sem_disp[tipo_producto].release();
+
+            sem_almacen[tipo_producto].acquire();
+            almacen[tipo_producto]++;
+            actualizarInterfazAlmacen(tipo_producto, almacen[tipo_producto]);
+            sem_almacen[tipo_producto].release();
+
+        } catch (InterruptedException e) {
+            System.out.println(e.getMessage());
+            e.printStackTrace();
+        }
+
+    }
+
+    public boolean isActive(){
+        return activa;
+    }
+
+    public void setInit(int p_botones, int p_camaras, int p_pantallas, int p_pines, int ensambladores){
+        
+        init_prod[BOTON] = p_botones;
+        init_prod[CAMARA] = p_camaras;
+        init_prod[PANTALLA] = p_pantallas;
+        init_prod[PIN] = p_pines;
+        init_prod[ENSAMBLADOR] = ensambladores;
+        
+    }
+    
+    public void consumir(int tipo_producto){
+
+        try {
+            
+            sem_capacidad[tipo_producto].release( ensamblaje[tipo_producto] );
+            sem_disp[tipo_producto].acquire( ensamblaje[tipo_producto] );
+
+            sem_almacen[tipo_producto].acquire();
+            almacen[tipo_producto] -= ensamblaje[tipo_producto];
+            actualizarInterfazAlmacen(tipo_producto, almacen[tipo_producto]);
+            sem_almacen[tipo_producto].release();
+
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+            e.printStackTrace();
+        }
+
+
+    }
+    
+    public void actualizarInterfazAlmacen(int tipo_producto, int n){
+        
+        if( tipo_producto == BOTON )
+            gui.set_botones(n, n_fabrica);
+        else if( tipo_producto == PANTALLA )
+            gui.set_pantallas(n, n_fabrica);
+        else if( tipo_producto == PIN )
+            gui.set_pines( n, n_fabrica );
+        else if( tipo_producto == CAMARA )
+            gui.set_camaras(n, n_fabrica);
+        
+    }
+
+    public void almacenarCelular(){
+        
+        try {
+            sem_celulares.acquire();
+            celulares++;
+            gui.set_celulares(celulares, n_fabrica);
+            sem_celulares.release();
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+            e.printStackTrace();
+        }
+        
+    }
+
+    public int lanzamiento(){
+        
+        int cel = -1;
+        try {
+            
+            sem_celulares.acquire();
+            cel = celulares;
+            celulares = 0;
+            gui.set_celulares(0, n_fabrica);
+            sem_celulares.release();
+            
+        } catch (InterruptedException ex) {
+            Logger.getLogger(Fabrica.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+        return cel;
+    }
+
+    public int getEstadoJefe(){
+        return jefe.getEstado();
+    }
+
+    public int getDiasRestantes(){
+        return jefe.getDiasRestantes();
+    }
+
+    void detener() {
+        
+        for(int i = 0; i<4; i++){
+            for( Productor p : productores.get(i) )
+                p.interrupt();
+            productores.get(i).clear();
+        }
+                
+        
+        for(Ensamblador ens:ensambladores)
+            ens.interrupt();
+        ensambladores.clear();
+        
+        gerente.detener();
+        
+        gerente.interrupt();
+        jefe.interrupt();
+        
+    }
+
+}
+
    
